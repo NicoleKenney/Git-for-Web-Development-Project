@@ -1,0 +1,155 @@
+
+https://codepen.io/ScarletK/pen/eYZqeRW
+
+    1. What is Semantic HTML? 
+       A hyper-text mark up language created in the early 90's. 
+
+    2. What is HTML used for? 
+       HTML is used to build the structure of the 'house'/site.
+
+    3. What is an attribute and where do we put it? 
+       An attribute is additonal info that defines an element and they are always specified in the start tag.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+       h1 is used for the main heading and there should only be one.
+
+    5. Name two tags that have required attributes
+       Links <a href> and images <img src>
+
+    6. What do we put in the head of our HTML document? 
+       Metadata and a head tag.
+
+    7. What is an id? 
+       An attribute tag that typically anchors the element to a reference inside the page; pointing to a style in the style sheet and can only be used once.
+
+    8. What elements can I add an id to? 
+       Any element that has a unique value.
+
+    9. How many times can I use the same id on a page? 
+       Once.
+
+    10. What is a class? 
+        A class in an attribute used for styling, points to a class name in a style sheet, and can be used as many times as desired.
+
+    11. What elements can I add a class to? 
+        Any element.
+
+    12. How many times can I use the same class on a page? 
+        As often as desired.
+
+    13. How do I get my link to open in a new tab?
+        Use command: target=_blank
+
+    14. What is the alt attribute in the image tag used for? 
+        Alt is used for accessibility and shows what the image is in text using a text reader in case the image is unable to be read by the browser or the user is unable to see the image.
+
+    15. How do I reference an id?
+        Use the octothorpe (hashtag): '#id (attribute)'
+
+    16. What is the difference between a section and a div
+        A section is larger (i.e. chapters, headers, footers) vs. a div which is smaller and defines group block elements. Sections are also semantic while divs are not.
+
+    17. What is CSS used for? 
+        Cascading Style Sheets used to 'decorate the house/site'; deals with the aesthetics of the site.
+
+    18. How to we select an element? Example - every h2 on the page
+        Use command: h2{}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        We would use an id to anchor to a specific reference inside the page (i.e. 'container') and a class to indicate a style (i.e. purple)
+
+    20. How do we select classes in CSS?
+        Use command: .'class name'{} (ex. .class1 or .special)
+
+    21. How do we select a p element with a single class of “human””?
+        Use command: p.human{}
+
+    22. What is a parent child selector? When would this be useful? 
+        A parent child selector matches all attributes of the child elements to that of the parent element. This is useful to use when you want to style an element that is within the body of another element.
+
+    23. How do you select all links within a div with the class of sidebar?
+        Use command: .sidebar
+
+    24. What is a pseudo selector?
+        A keyword added to a selector that specifies a special state of the selected element(s) (i.e. 'hover')
+
+    25. What do we use the change the spacing between lines?
+        line-height: (value)
+
+    26. What do we use to change the spacing between letters?
+        letter-spacing: (value)
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform: (value)
+
+    28. How do I add a 1px border around my div that is dotted and black?
+        div{
+            border-style:dotted, black
+        }
+
+    29. How do I select everything on the page? 
+        Use command: *{}
+
+    30. How do I write a comment in CSS?
+        /* comment */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+        Used command: pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        Use command: ls 
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        Use command: rm or rm-r and becasue there is no recovery of what has been deleted. *(but rm -i filename gives prompt to confirm deletion?)*
+
+    34. Why should I use version control? 
+        To keep track of all versions of the code history in case recovering an older version is needed.
+
+    35. How often should I commit to github?
+        When any single point of change is completed.
+
+    36. What is the command we would use to push our repo up to github? 
+        Use command: git push -u origin (branch name) for first time the just git push thereafter.
+
+    37. Walk me through Lambda's git flow. 
+        1. Start from main directory of terminal
+        2. Create new directory to save project using command: mkdir if one has not already been created
+        3. Go to git hub interface and fork project from repo
+        4. Clone project's URL by clicking on clipboard
+        5. Go back to terminal
+        6. Cd into directory created to save project using command: cd 'name of directory'
+        7. Clone project into this directory using command: git clone 'URL'
+        8. Cd into cloned project's folder using command: cd 'name of project'
+        9. Create personal branch using command: git checkout -b 'first name-last name'
+        10. Open project in VS Code using command: code .
+        10. Add all new or modified files to repo using command: git add .
+        11. Once any single point of change is done or every 15 - 20 mins and definitely when all modifications are made and saved, commit changes to repo using command: git commit -m 'message describing modifications'
+        12. When complete, push modified project back to original repo using command: git push -u origin 'name' (for first push); After first push can use command: git push
+        13. Go back to repo on github
+        14. Click on drop down menu to the left that says 'main' and select your personal branch
+        15. Confirm changes have been sent 
+        16. Initiate pull request by clicking the green "Compare & pull request" button
+        17. Change the pull down menu to the left from 'base' to your branch
+        18. Can leave a comment (i.e. "project 2 ready for review")
+        19. Click 'Reviewers' link to the right if adding reviewers (optional)
+        20. Click green "Create Pull Request" button at bottom right 
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+       An inline element doesn't start a new line, only occupies the width it requires, and width & height cannot be set. A block element starts a new line, will occupy the full width available, and width & height can be set.
+
+    2. What happens when an element is positioned absolutely? 
+       An element that is positioned absolutely is taken out of the flow; other elements are positioned as if it did not exist. The absolutely positioned element is positioned relative to its nearest positioned ancestor (i.e. the nearest ancestor that is not static)
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+       Define margins for the element and define the padding.
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+       Block: p, div, section
+       Inline: button, img
+       Inline-block: nav
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+       The box model defines the element, padding, border, and margin. The fix is when the width is defined. (?)  
+
